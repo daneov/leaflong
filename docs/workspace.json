@@ -1,0 +1,485 @@
+{
+  "configuration" : { },
+  "description" : "Description",
+  "documentation" : { },
+  "id" : 1,
+  "lastModifiedAgent" : "structurizr-javascript",
+  "lastModifiedDate" : "2024-08-11T15:50:33Z",
+  "model" : {
+    "people" : [ {
+      "description" : "A user looking for a specific solution",
+      "id" : "1",
+      "location" : "Unspecified",
+      "name" : "Healthseeker",
+      "properties" : {
+        "structurizr.dsl.identifier" : "healthseeker"
+      },
+      "relationships" : [ {
+        "description" : "Uses",
+        "destinationId" : "4",
+        "id" : "20",
+        "properties" : {
+          "structurizr.dsl.identifier" : "1b131ed7-2c04-40c6-98ef-e8c50b491396"
+        },
+        "sourceId" : "1",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Uses",
+        "destinationId" : "3",
+        "id" : "21",
+        "linkedRelationshipId" : "20",
+        "sourceId" : "1"
+      } ],
+      "tags" : "Element,Person"
+    }, {
+      "description" : "A user curious to the world of herbal treatments",
+      "id" : "2",
+      "location" : "Unspecified",
+      "name" : "Curious user",
+      "properties" : {
+        "structurizr.dsl.identifier" : "curioususer"
+      },
+      "relationships" : [ {
+        "description" : "Uses",
+        "destinationId" : "4",
+        "id" : "18",
+        "properties" : {
+          "structurizr.dsl.identifier" : "1427e368-dd75-4e38-9fed-e86d93912e30"
+        },
+        "sourceId" : "2",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Uses",
+        "destinationId" : "3",
+        "id" : "19",
+        "linkedRelationshipId" : "18",
+        "sourceId" : "2"
+      } ],
+      "tags" : "Element,Person"
+    } ],
+    "softwareSystems" : [ {
+      "containers" : [ {
+        "components" : [ {
+          "description" : "Display a random list of herbs/ailments for which we have recipes",
+          "documentation" : { },
+          "group" : "ViewControllers",
+          "id" : "5",
+          "name" : "OverviewViewController",
+          "properties" : {
+            "structurizr.dsl.identifier" : "overview"
+          },
+          "tags" : "Element,Component",
+          "technology" : "Swift"
+        }, {
+          "description" : "Allows the users to search for herbs and treatments",
+          "documentation" : { },
+          "group" : "ViewControllers",
+          "id" : "6",
+          "name" : "SearchViewController",
+          "properties" : {
+            "structurizr.dsl.identifier" : "search"
+          },
+          "relationships" : [ {
+            "destinationId" : "8",
+            "id" : "9",
+            "properties" : {
+              "structurizr.dsl.identifier" : "e11c5fb2-1e76-4577-9d38-1473450cc3fb"
+            },
+            "sourceId" : "6",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Swift"
+        }, {
+          "description" : "Display probable location of herbs in a map",
+          "documentation" : { },
+          "group" : "ViewControllers",
+          "id" : "7",
+          "name" : "HerbScoutViewController",
+          "properties" : {
+            "structurizr.dsl.identifier" : "map"
+          },
+          "relationships" : [ {
+            "destinationId" : "8",
+            "id" : "10",
+            "properties" : {
+              "structurizr.dsl.identifier" : "922d3628-3406-45a1-b309-8df72b57e359"
+            },
+            "sourceId" : "7",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Swift"
+        }, {
+          "description" : "Processes the search and performs the request where needed",
+          "documentation" : { },
+          "group" : "Services",
+          "id" : "8",
+          "name" : "SearchService",
+          "properties" : {
+            "structurizr.dsl.identifier" : "searchservice"
+          },
+          "relationships" : [ {
+            "destinationId" : "12",
+            "id" : "28",
+            "properties" : {
+              "structurizr.dsl.identifier" : "36a328df-55cc-4b07-9571-d663bf209d9a"
+            },
+            "sourceId" : "8",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "11",
+            "id" : "29",
+            "linkedRelationshipId" : "28",
+            "sourceId" : "8"
+          }, {
+            "destinationId" : "13",
+            "id" : "31",
+            "properties" : {
+              "structurizr.dsl.identifier" : "65d54fd6-2d3a-43ae-aedd-ab81fce393e4"
+            },
+            "sourceId" : "8",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Swift"
+        } ],
+        "description" : "Used to interact with and propose treatments",
+        "documentation" : { },
+        "id" : "4",
+        "name" : "Mobile Application",
+        "properties" : {
+          "structurizr.dsl.identifier" : "mobileapp"
+        },
+        "relationships" : [ {
+          "description" : "Reads (caches) and submits new herbs & treatments",
+          "destinationId" : "11",
+          "id" : "22",
+          "properties" : {
+            "structurizr.dsl.identifier" : "d3ad60b3-e731-4320-8331-2c7781a3120a"
+          },
+          "sourceId" : "4",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Retrieves and displays images",
+          "destinationId" : "15",
+          "id" : "23",
+          "properties" : {
+            "structurizr.dsl.identifier" : "afd7015c-ee7f-47ad-8e75-38f8127af2e3"
+          },
+          "sourceId" : "4",
+          "tags" : "Relationship"
+        }, {
+          "destinationId" : "12",
+          "id" : "30",
+          "linkedRelationshipId" : "28",
+          "sourceId" : "4"
+        }, {
+          "destinationId" : "13",
+          "id" : "32",
+          "linkedRelationshipId" : "31",
+          "sourceId" : "4"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "iOS"
+      }, {
+        "components" : [ {
+          "description" : "Return herbs matching the parameters",
+          "documentation" : { },
+          "id" : "12",
+          "name" : "HerbSearchEndpoint",
+          "properties" : {
+            "structurizr.dsl.identifier" : "herbsearch"
+          },
+          "tags" : "Element,Component"
+        }, {
+          "description" : "Return herbs matching the query parameter",
+          "documentation" : { },
+          "id" : "13",
+          "name" : "TreatmentSearchEndpoint",
+          "properties" : {
+            "structurizr.dsl.identifier" : "treatmentsearch"
+          },
+          "tags" : "Element,Component"
+        }, {
+          "description" : "Return herbs available in the given location",
+          "documentation" : { },
+          "id" : "14",
+          "name" : "LocationSearchEndpoint",
+          "properties" : {
+            "structurizr.dsl.identifier" : "locationsearch"
+          },
+          "tags" : "Element,Component"
+        } ],
+        "documentation" : { },
+        "id" : "11",
+        "name" : "API",
+        "properties" : {
+          "structurizr.dsl.identifier" : "api"
+        },
+        "relationships" : [ {
+          "description" : "Reads from and persists data",
+          "destinationId" : "17",
+          "id" : "24",
+          "properties" : {
+            "structurizr.dsl.identifier" : "47f29af0-d781-46ff-b3b7-dcd9523ea01d"
+          },
+          "sourceId" : "11",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Stores images",
+          "destinationId" : "16",
+          "id" : "25",
+          "properties" : {
+            "structurizr.dsl.identifier" : "81ad18ee-528c-4c0e-bef0-a9fff2d79174"
+          },
+          "sourceId" : "11",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Links to images",
+          "destinationId" : "15",
+          "id" : "26",
+          "properties" : {
+            "structurizr.dsl.identifier" : "8da6314b-f744-40d2-b59f-61587114998f"
+          },
+          "sourceId" : "11",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Unknown"
+      }, {
+        "documentation" : { },
+        "id" : "15",
+        "name" : "CDN",
+        "properties" : {
+          "structurizr.dsl.identifier" : "cdn"
+        },
+        "relationships" : [ {
+          "description" : "Caches images",
+          "destinationId" : "16",
+          "id" : "27",
+          "properties" : {
+            "structurizr.dsl.identifier" : "9f53d079-5468-4216-b079-aebd0aa0015e"
+          },
+          "sourceId" : "15",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Unknown"
+      }, {
+        "description" : "Stores images about each herb or remedy",
+        "documentation" : { },
+        "id" : "16",
+        "name" : "Storage",
+        "properties" : {
+          "structurizr.dsl.identifier" : "storage"
+        },
+        "tags" : "Element,Container",
+        "technology" : "Unknown"
+      }, {
+        "description" : "Stores plain data about each herb or remedy",
+        "documentation" : { },
+        "id" : "17",
+        "name" : "Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "database"
+        },
+        "tags" : "Element,Container",
+        "technology" : "Unknown"
+      } ],
+      "documentation" : { },
+      "id" : "3",
+      "location" : "Unspecified",
+      "name" : "Leaf long",
+      "properties" : {
+        "structurizr.dsl.identifier" : "system"
+      },
+      "tags" : "Element,Software System"
+    } ]
+  },
+  "name" : "Name",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKICAgIG1vZGVsIHsKICAgICAgICBoZWFsdGhTZWVrZXIgPSBwZXJzb24gIkhlYWx0aHNlZWtlciIgIkEgdXNlciBsb29raW5nIGZvciBhIHNwZWNpZmljIHNvbHV0aW9uIgogICAgICAgIGN1cmlvdXNVc2VyID0gcGVyc29uICJDdXJpb3VzIHVzZXIiICJBIHVzZXIgY3VyaW91cyB0byB0aGUgd29ybGQgb2YgaGVyYmFsIHRyZWF0bWVudHMiCiAgICAgICAgc3lzdGVtID0gc29mdHdhcmVTeXN0ZW0gIkxlYWYgbG9uZyIgewogICAgICAgICAgICBtb2JpbGVBcHAgPSBjb250YWluZXIgIk1vYmlsZSBBcHBsaWNhdGlvbiIgIlVzZWQgdG8gaW50ZXJhY3Qgd2l0aCBhbmQgcHJvcG9zZSB0cmVhdG1lbnRzIiB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJpT1MiCgogICAgICAgICAgICAgICAgZ3JvdXAgVmlld0NvbnRyb2xsZXJzIHsKICAgICAgICAgICAgICAgICAgICBvdmVydmlldyA9IGNvbXBvbmVudCAiT3ZlcnZpZXdWaWV3Q29udHJvbGxlciIgewogICAgICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJTd2lmdCIKICAgICAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIkRpc3BsYXkgYSByYW5kb20gbGlzdCBvZiBoZXJicy9haWxtZW50cyBmb3Igd2hpY2ggd2UgaGF2ZSByZWNpcGVzIgogICAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICAgICAgc2VhcmNoID0gY29tcG9uZW50ICJTZWFyY2hWaWV3Q29udHJvbGxlciIgewogICAgICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJTd2lmdCIKICAgICAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIkFsbG93cyB0aGUgdXNlcnMgdG8gc2VhcmNoIGZvciBoZXJicyBhbmQgdHJlYXRtZW50cyIKICAgICAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgICAgIG1hcCA9IGNvbXBvbmVudCAiSGVyYlNjb3V0Vmlld0NvbnRyb2xsZXIiIHsKICAgICAgICAgICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiU3dpZnQiCiAgICAgICAgICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJEaXNwbGF5IHByb2JhYmxlIGxvY2F0aW9uIG9mIGhlcmJzIGluIGEgbWFwIgogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICBncm91cCBTZXJ2aWNlcyB7CiAgICAgICAgICAgICAgICAgICAgc2VhcmNoU2VydmljZSA9IGNvbXBvbmVudCAiU2VhcmNoU2VydmljZSIgewogICAgICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJTd2lmdCIKICAgICAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIlByb2Nlc3NlcyB0aGUgc2VhcmNoIGFuZCBwZXJmb3JtcyB0aGUgcmVxdWVzdCB3aGVyZSBuZWVkZWQiCgogICAgICAgICAgICAgICAgICAgICAgICBzZWFyY2ggLT4gdGhpcwogICAgICAgICAgICAgICAgICAgICAgICBtYXAgLT4gdGhpcwogICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIAogICAgICAgICAgICB9CiAgICAgICAgICAgIGFwaSA9IGNvbnRhaW5lciAiQVBJIiB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJVbmtub3duIgoKICAgICAgICAgICAgICAgIGhlcmJTZWFyY2ggPSBjb21wb25lbnQgIkhlcmJTZWFyY2hFbmRwb2ludCIgIlJldHVybiBoZXJicyBtYXRjaGluZyB0aGUgcGFyYW1ldGVycyIKICAgICAgICAgICAgICAgIHRyZWF0bWVudFNlYXJjaCA9IGNvbXBvbmVudCAiVHJlYXRtZW50U2VhcmNoRW5kcG9pbnQiICJSZXR1cm4gaGVyYnMgbWF0Y2hpbmcgdGhlIHF1ZXJ5IHBhcmFtZXRlciIKICAgICAgICAgICAgICAgIGxvY2F0aW9uU2VhcmNoID0gY29tcG9uZW50ICJMb2NhdGlvblNlYXJjaEVuZHBvaW50IiAiUmV0dXJuIGhlcmJzIGF2YWlsYWJsZSBpbiB0aGUgZ2l2ZW4gbG9jYXRpb24iCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGNkbiA9IGNvbnRhaW5lciAiQ0ROIiB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJVbmtub3duIgogICAgICAgICAgICB9CgogICAgICAgICAgICBzdG9yYWdlID0gY29udGFpbmVyICJTdG9yYWdlIiAiU3RvcmVzIGltYWdlcyBhYm91dCBlYWNoIGhlcmIgb3IgcmVtZWR5IiB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJVbmtub3duIgogICAgICAgICAgICB9CgogICAgICAgICAgICBkYXRhYmFzZSA9IGNvbnRhaW5lciAiRGF0YWJhc2UiICJTdG9yZXMgcGxhaW4gZGF0YSBhYm91dCBlYWNoIGhlcmIgb3IgcmVtZWR5IiB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJVbmtub3duIgogICAgICAgICAgICB9CgogICAgICAgICAgICAjIFVzZXIgcmVsYXRpb25zaGlwcwogICAgICAgICAgICBjdXJpb3VzVXNlciAtPiBtb2JpbGVBcHAgIlVzZXMiCiAgICAgICAgICAgIGhlYWx0aHNlZWtlciAtPiBtb2JpbGVBcHAgIlVzZXMiCgogICAgICAgICAgICAjIENvbnRhaW5lciByZWxhdGlvbnNoaXBzCiAgICAgICAgICAgIG1vYmlsZUFwcCAtPiBhcGkgIlJlYWRzIChjYWNoZXMpIGFuZCBzdWJtaXRzIG5ldyBoZXJicyAmIHRyZWF0bWVudHMiCiAgICAgICAgICAgIG1vYmlsZUFwcCAtPiBjZG4gIlJldHJpZXZlcyBhbmQgZGlzcGxheXMgaW1hZ2VzIgoKICAgICAgICAgICAgYXBpIC0+IGRhdGFiYXNlICJSZWFkcyBmcm9tIGFuZCBwZXJzaXN0cyBkYXRhIgogICAgICAgICAgICBhcGkgLT4gc3RvcmFnZSAiU3RvcmVzIGltYWdlcyIKICAgICAgICAgICAgYXBpIC0+IGNkbiAiTGlua3MgdG8gaW1hZ2VzIgoKICAgICAgICAgICAgY2RuIC0+IHN0b3JhZ2UgIkNhY2hlcyBpbWFnZXMiCgogICAgICAgICAgICAjIENvbXBvbmVudCByZWxhdGlvbnNoaXBzCiAgICAgICAgICAgIHNlYXJjaFNlcnZpY2UgLT4gaGVyYlNlYXJjaAogICAgICAgICAgICBzZWFyY2hTZXJ2aWNlIC0+IHRyZWF0bWVudFNlYXJjaAogICAgICAgIH0KICAgIH0KCiAgICB2aWV3cyB7CiAgICAgICAgc3lzdGVtQ29udGV4dCBzeXN0ZW0gewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b2xheW91dCBscgogICAgICAgIH0KCiAgICAgICAgY29udGFpbmVyIHN5c3RlbSB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICAvL2F1dG9sYXlvdXQgbHIKICAgICAgICB9CgogICAgICAgIGNvbXBvbmVudCBtb2JpbGVBcHAgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICB9CgogICAgICAgIGNvbXBvbmVudCBhcGkgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICB9CgogICAgICAgIHN0eWxlcyB7CiAgICAgICAgICAgIGVsZW1lbnQgIlBlcnNvbiIgewogICAgICAgICAgICAgIHNoYXBlIFBlcnNvbgogICAgICAgICAgICB9CiAgICAgICAgfQoKICAgICAgICB0aGVtZSBkZWZhdWx0CiAgICB9Cn0K"
+  },
+  "views" : {
+    "componentViews" : [ {
+      "containerId" : "4",
+      "dimensions" : {
+        "height" : 2105,
+        "width" : 2390
+      },
+      "elements" : [ {
+        "id" : "5",
+        "x" : 240,
+        "y" : 240
+      }, {
+        "id" : "6",
+        "x" : 240,
+        "y" : 840
+      }, {
+        "id" : "7",
+        "x" : 240,
+        "y" : 1440
+      }, {
+        "id" : "8",
+        "x" : 990,
+        "y" : 1140
+      }, {
+        "id" : "11",
+        "x" : 1740,
+        "y" : 1140
+      } ],
+      "externalContainerBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Component-001",
+      "order" : 3,
+      "relationships" : [ {
+        "id" : "10"
+      }, {
+        "id" : "29"
+      }, {
+        "id" : "9"
+      } ]
+    }, {
+      "containerId" : "11",
+      "dimensions" : {
+        "height" : 2011,
+        "width" : 1620
+      },
+      "elements" : [ {
+        "id" : "4",
+        "x" : 200,
+        "y" : 519
+      }, {
+        "id" : "12",
+        "x" : 950,
+        "y" : 219
+      }, {
+        "id" : "13",
+        "x" : 950,
+        "y" : 819
+      }, {
+        "id" : "14",
+        "x" : 950,
+        "y" : 1419
+      } ],
+      "externalContainerBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Component-002",
+      "order" : 4,
+      "relationships" : [ {
+        "id" : "30"
+      }, {
+        "id" : "32"
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "lastSavedView" : "Component-002",
+      "metadataSymbols" : "SquareBrackets",
+      "styles" : {
+        "elements" : [ {
+          "shape" : "Person",
+          "tag" : "Person"
+        } ]
+      },
+      "terminology" : { },
+      "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ]
+    },
+    "containerViews" : [ {
+      "dimensions" : {
+        "height" : 1563,
+        "width" : 3549
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 200,
+        "y" : 201
+      }, {
+        "id" : "2",
+        "x" : 200,
+        "y" : 901
+      }, {
+        "id" : "4",
+        "x" : 900,
+        "y" : 601
+      }, {
+        "id" : "11",
+        "x" : 1742,
+        "y" : 219
+      }, {
+        "id" : "15",
+        "x" : 1747,
+        "y" : 971
+      }, {
+        "id" : "16",
+        "x" : 2879,
+        "y" : 971
+      }, {
+        "id" : "17",
+        "x" : 2874,
+        "y" : 219
+      } ],
+      "externalSoftwareSystemBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Container-001",
+      "order" : 2,
+      "relationships" : [ {
+        "id" : "18"
+      }, {
+        "id" : "20"
+      }, {
+        "id" : "22"
+      }, {
+        "id" : "23"
+      }, {
+        "id" : "24"
+      }, {
+        "id" : "25"
+      }, {
+        "id" : "26"
+      }, {
+        "id" : "27"
+      } ],
+      "softwareSystemId" : "3"
+    } ],
+    "systemContextViews" : [ {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "dimensions" : {
+        "height" : 1500,
+        "width" : 1550
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 199,
+        "y" : 200
+      }, {
+        "id" : "2",
+        "x" : 199,
+        "y" : 900
+      }, {
+        "id" : "3",
+        "x" : 899,
+        "y" : 600
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "generatedKey" : true,
+      "key" : "SystemContext-001",
+      "order" : 1,
+      "relationships" : [ {
+        "id" : "19"
+      }, {
+        "id" : "21"
+      } ],
+      "softwareSystemId" : "3"
+    } ]
+  }
+}
