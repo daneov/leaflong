@@ -1,0 +1,16 @@
+name: Build C4 PlantUML
+on: [push, create]
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    container: 
+      image: structurizr/cli:latest
+      volumes:
+        - .:/usr/local/structurizr
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Structurizr to PlantUML
+        run: /usr/local/structurizr-cli/structurizr.sh export -w docs/workspace.dsl -o output -f plantuml/c4plantuml
+        working-directory: /usr/local/structurizr
