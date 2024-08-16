@@ -11,9 +11,19 @@
 		D5404C772C67BC8300F29EA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5404C762C67BC8300F29EA4 /* ContentView.swift */; };
 		D5404C792C67BC8600F29EA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5404C782C67BC8600F29EA4 /* Assets.xcassets */; };
 		D5404C7C2C67BC8600F29EA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5404C7B2C67BC8600F29EA4 /* Preview Assets.xcassets */; };
-		D5404C862C67BC8700F29EA4 /* LeafLongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5404C852C67BC8700F29EA4 /* LeafLongTests.swift */; };
 		D5404C902C67BC8700F29EA4 /* LeafLongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5404C8F2C67BC8700F29EA4 /* LeafLongUITests.swift */; };
 		D5404C922C67BC8700F29EA4 /* LeafLongUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5404C912C67BC8700F29EA4 /* LeafLongUITestsLaunchTests.swift */; };
+		D5ADD1082C6E587500347583 /* HerbImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ADD1072C6E587400347583 /* HerbImageView.swift */; };
+		D5ADD10B2C6F289500347583 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ADD10A2C6F289500347583 /* Theme.swift */; };
+		D5ADD10F2C6F5A3F00347583 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ADD10E2C6F5A3F00347583 /* ThemeManager.swift */; };
+		D5ADD1112C6F5BB500347583 /* MainTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ADD1102C6F5BB500347583 /* MainTheme.swift */; };
+		D5ADD1132C6F6ABE00347583 /* ThemedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ADD1122C6F6ABE00347583 /* ThemedView.swift */; };
+		D5ADD1152C6F795C00347583 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5ADD1142C6F795C00347583 /* Colors.xcassets */; };
+		D5ADD1172C6F79AC00347583 /* HerbDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ADD1162C6F79AC00347583 /* HerbDetailView.swift */; };
+		D5ADD11B2C6F7A1F00347583 /* HerbDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ADD11A2C6F7A1F00347583 /* HerbDetailViewModel.swift */; };
+		D5ADD11D2C6F87F400347583 /* HerbDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ADD11C2C6F87F400347583 /* HerbDetailViewModelTests.swift */; };
+		D5ADD1432C6F935800347583 /* Lora-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5ADD1412C6F935700347583 /* Lora-VariableFont_wght.ttf */; };
+		D5ADD1442C6F935800347583 /* Lora-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5ADD1422C6F935800347583 /* Lora-Italic-VariableFont_wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +50,29 @@
 		D5404C782C67BC8600F29EA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5404C7B2C67BC8600F29EA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D5404C812C67BC8700F29EA4 /* LeafLongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeafLongTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5404C852C67BC8700F29EA4 /* LeafLongTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafLongTests.swift; sourceTree = "<group>"; };
 		D5404C8B2C67BC8700F29EA4 /* LeafLongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeafLongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5404C8F2C67BC8700F29EA4 /* LeafLongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafLongUITests.swift; sourceTree = "<group>"; };
 		D5404C912C67BC8700F29EA4 /* LeafLongUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafLongUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D5ADD1072C6E587400347583 /* HerbImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerbImageView.swift; sourceTree = "<group>"; };
+		D5ADD10A2C6F289500347583 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D5ADD10E2C6F5A3F00347583 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		D5ADD1102C6F5BB500347583 /* MainTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTheme.swift; sourceTree = "<group>"; };
+		D5ADD1122C6F6ABE00347583 /* ThemedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemedView.swift; sourceTree = "<group>"; };
+		D5ADD1142C6F795C00347583 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		D5ADD1162C6F79AC00347583 /* HerbDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerbDetailView.swift; sourceTree = "<group>"; };
+		D5ADD11A2C6F7A1F00347583 /* HerbDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerbDetailViewModel.swift; sourceTree = "<group>"; };
+		D5ADD11C2C6F87F400347583 /* HerbDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HerbDetailViewModelTests.swift; path = HerbInformation/HerbDetailViewModelTests.swift; sourceTree = "<group>"; };
+		D5ADD12D2C6F8F6500347583 /* 01. structurizr-1-SystemContext-001.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "01. structurizr-1-SystemContext-001.svg"; sourceTree = "<group>"; };
+		D5ADD12E2C6F8F6500347583 /* 02. structurizr-1-Container-001.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "02. structurizr-1-Container-001.svg"; sourceTree = "<group>"; };
+		D5ADD12F2C6F8F6500347583 /* 03. structurizr-1-Component-001.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "03. structurizr-1-Component-001.svg"; sourceTree = "<group>"; };
+		D5ADD1302C6F8F6500347583 /* 04. structurizr-1-Component-002.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "04. structurizr-1-Component-002.svg"; sourceTree = "<group>"; };
+		D5ADD1392C6F8F6500347583 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D5ADD13B2C6F8F6500347583 /* default.nix */ = {isa = PBXFileReference; lastKnownFileType = text; path = default.nix; sourceTree = "<group>"; };
+		D5ADD13C2C6F8F6500347583 /* structurizr.nix */ = {isa = PBXFileReference; lastKnownFileType = text; path = structurizr.nix; sourceTree = "<group>"; };
+		D5ADD13D2C6F8F6500347583 /* workspace.dsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = workspace.dsl; sourceTree = "<group>"; };
+		D5ADD1412C6F935700347583 /* Lora-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		D5ADD1422C6F935800347583 /* Lora-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		D5ADD1452C6F950800347583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +103,7 @@
 		D5404C682C67BC8300F29EA4 = {
 			isa = PBXGroup;
 			children = (
+				D5ADD13F2C6F8F6500347583 /* docs */,
 				D5404C732C67BC8300F29EA4 /* LeafLong */,
 				D5404C842C67BC8700F29EA4 /* LeafLongTests */,
 				D5404C8E2C67BC8700F29EA4 /* LeafLongUITests */,
@@ -94,9 +124,14 @@
 		D5404C732C67BC8300F29EA4 /* LeafLong */ = {
 			isa = PBXGroup;
 			children = (
+				D5ADD1452C6F950800347583 /* Info.plist */,
+				D5ADD1402C6F932400347583 /* Fonts */,
+				D5ADD1182C6F79C600347583 /* HerbInformation */,
+				D5ADD10C2C6F59DE00347583 /* UI */,
 				D5404C742C67BC8300F29EA4 /* LeafLongApp.swift */,
 				D5404C762C67BC8300F29EA4 /* ContentView.swift */,
 				D5404C782C67BC8600F29EA4 /* Assets.xcassets */,
+				D5ADD1142C6F795C00347583 /* Colors.xcassets */,
 				D5404C7A2C67BC8600F29EA4 /* Preview Content */,
 			);
 			path = LeafLong;
@@ -113,7 +148,7 @@
 		D5404C842C67BC8700F29EA4 /* LeafLongTests */ = {
 			isa = PBXGroup;
 			children = (
-				D5404C852C67BC8700F29EA4 /* LeafLongTests.swift */,
+				D5ADD11C2C6F87F400347583 /* HerbDetailViewModelTests.swift */,
 			);
 			path = LeafLongTests;
 			sourceTree = "<group>";
@@ -125,6 +160,83 @@
 				D5404C912C67BC8700F29EA4 /* LeafLongUITestsLaunchTests.swift */,
 			);
 			path = LeafLongUITests;
+			sourceTree = "<group>";
+		};
+		D5ADD1062C6E584000347583 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5ADD1072C6E587400347583 /* HerbImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5ADD10C2C6F59DE00347583 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D5ADD10D2C6F5A2A00347583 /* Theming */,
+				D5ADD1062C6E584000347583 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D5ADD10D2C6F5A2A00347583 /* Theming */ = {
+			isa = PBXGroup;
+			children = (
+				D5ADD10A2C6F289500347583 /* Theme.swift */,
+				D5ADD10E2C6F5A3F00347583 /* ThemeManager.swift */,
+				D5ADD1102C6F5BB500347583 /* MainTheme.swift */,
+				D5ADD1122C6F6ABE00347583 /* ThemedView.swift */,
+			);
+			path = Theming;
+			sourceTree = "<group>";
+		};
+		D5ADD1182C6F79C600347583 /* HerbInformation */ = {
+			isa = PBXGroup;
+			children = (
+				D5ADD1192C6F79D700347583 /* Views */,
+				D5ADD11A2C6F7A1F00347583 /* HerbDetailViewModel.swift */,
+			);
+			path = HerbInformation;
+			sourceTree = "<group>";
+		};
+		D5ADD1192C6F79D700347583 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5ADD1162C6F79AC00347583 /* HerbDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5ADD1312C6F8F6500347583 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D5ADD12D2C6F8F6500347583 /* 01. structurizr-1-SystemContext-001.svg */,
+				D5ADD12E2C6F8F6500347583 /* 02. structurizr-1-Container-001.svg */,
+				D5ADD12F2C6F8F6500347583 /* 03. structurizr-1-Component-001.svg */,
+				D5ADD1302C6F8F6500347583 /* 04. structurizr-1-Component-002.svg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		D5ADD13F2C6F8F6500347583 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				D5ADD1312C6F8F6500347583 /* images */,
+				D5ADD1392C6F8F6500347583 /* .gitignore */,
+				D5ADD13B2C6F8F6500347583 /* default.nix */,
+				D5ADD13C2C6F8F6500347583 /* structurizr.nix */,
+				D5ADD13D2C6F8F6500347583 /* workspace.dsl */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		D5ADD1402C6F932400347583 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D5ADD1422C6F935800347583 /* Lora-Italic-VariableFont_wght.ttf */,
+				D5ADD1412C6F935700347583 /* Lora-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +343,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5ADD1442C6F935800347583 /* Lora-Italic-VariableFont_wght.ttf in Resources */,
+				D5ADD1152C6F795C00347583 /* Colors.xcassets in Resources */,
 				D5404C7C2C67BC8600F29EA4 /* Preview Assets.xcassets in Resources */,
 				D5404C792C67BC8600F29EA4 /* Assets.xcassets in Resources */,
+				D5ADD1432C6F935800347583 /* Lora-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +373,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5404C772C67BC8300F29EA4 /* ContentView.swift in Sources */,
+				D5ADD11B2C6F7A1F00347583 /* HerbDetailViewModel.swift in Sources */,
+				D5ADD10B2C6F289500347583 /* Theme.swift in Sources */,
+				D5ADD10F2C6F5A3F00347583 /* ThemeManager.swift in Sources */,
+				D5ADD1082C6E587500347583 /* HerbImageView.swift in Sources */,
+				D5ADD1112C6F5BB500347583 /* MainTheme.swift in Sources */,
+				D5ADD1132C6F6ABE00347583 /* ThemedView.swift in Sources */,
+				D5ADD1172C6F79AC00347583 /* HerbDetailView.swift in Sources */,
 				D5404C752C67BC8300F29EA4 /* LeafLongApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5404C862C67BC8700F29EA4 /* LeafLongTests.swift in Sources */,
+				D5ADD11D2C6F87F400347583 /* HerbDetailViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +547,7 @@
 				DEVELOPMENT_TEAM = 8S83GZZXL5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LeafLong/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +577,7 @@
 				DEVELOPMENT_TEAM = 8S83GZZXL5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LeafLong/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
