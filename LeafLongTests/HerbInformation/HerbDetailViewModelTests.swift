@@ -16,13 +16,12 @@ final class HerbDetailViewModelTests: XCTestCase {
     override func tearDownWithError() throws {
     }
 
-    func testChosesTheCorrectImage() throws {
-        let expectedImage = ImageResource(name: "garlic", bundle: .main)
+    func testReflectsTheCorrectName() throws {
         let expectedName = "Garlic"
+        let viewModel = HerbDetailViewModel(name: "garlic", detail: "", imageURL: URL(string: "https://www.google.com")!)
         
-        let viewModel = HerbDetailViewModel(name: "garlic", detail: "")
         XCTAssertEqual(viewModel.name, expectedName)
-        XCTAssertEqual(viewModel.image, expectedImage)
-        XCTAssertNotNil(viewModel.image)
     }
+    
+    
 }
